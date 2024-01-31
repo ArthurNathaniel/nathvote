@@ -1,0 +1,32 @@
+.hero_all {
+    display: grid;
+    align-items: center;
+   height: 90vh;
+    padding: 0 10%;
+    padding-block: 100px;
+    text-align: center;
+}
+
+.hero_text span {
+    color: #ff4961;
+}
+
+.hero_text h1 {
+    color: #6158e5;
+    font-size: 60px;
+}
+
+.hero_text p {
+    margin-top: 30px;
+}
+
+.hero_btn {
+    margin-top: 50px;
+}
+
+.vv {
+    background-color: #ff4961;
+    padding: 15px 45px;
+    color: #f4f2ee;
+    border-radius: 8px;
+}

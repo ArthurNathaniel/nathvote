@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caros';
+    text-decoration: none !important;
+}
+
+body {
+    font-family: 'Caros';
+    background-color: #f4f2ee;
+    width: 100%;
+    overflow-x: hidden;
+    color: #060240;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('./Caros.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    padding-block: 10px;
+    background-color: #fff;
+}
+
+.logo span {
+    color: #ff4961;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.logo sup {
+    color: #ff4961;
+    font-size: 45px;
+}
+
+.nav_links a {
+    padding-left: 20px;
+}
+
+.nav_links a:hover {
+    color: #ff4961;
+}
+
+.call {
+    background-color: #ff4961;
+    padding: 15px 45px;
+    color: #f4f2ee;
+    border-radius: 8px;
+}
+
+.footer {
+
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* background-color: #060240; */
+    background-color: #fff;
+    padding-block: 20px;
+    /* color: #f4f2ee; */
+    color: #060240;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.footer span {
+    color: #ff4961;
+    padding-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+.footer a {
+    /* color: #f4f2ee; */
+    color: #060240;
+}
+
+.logo_footer {
+    height: 100px;
+    width: 250px;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+    flex-direction: column !important;
+    width: 50%;
+    background-color: #fff;
+}
+
+.mobile_nav a {
+    display: flex;
+    flex-direction: column !important;
+    padding: 10px;
+    padding-left: 5%;
+    border-top: 1.5px solid #989393;
+}
+
+.mobile_nav a:hover {
+    color: #ff4961;
+}
+
+.nav_call {
+    background-color: #ff4961;
+    color: #fff;
+}
+
+.nav_call:hover {
+    background-color: #6158e5;
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 1110px) {
+
+    .nav_links,
+    .call {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .toggle_btn i {
+        font-size: 30px;
+    }
+
+    .navbar_all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+
+
+    }
+
+    .mobile_nav {
+        display: none;
+        position: sticky;
+
+        z-index: 54;
+        width: 100%;
+        right: 50%;
+        text-align: center;
+
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .mobile_nav {
+        display: none;
+        position: sticky;
+        top: 0;
+        z-index: 54;
+        width: 100%;
+
+    }
+}
