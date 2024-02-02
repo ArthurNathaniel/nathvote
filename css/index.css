@@ -30,3 +30,9 @@
     color: #f4f2ee;
     border-radius: 8px;
 }
+@media only screen and (max-width: 810px) {
+  
+    .hero_all {
+        height: 100%;
+    }
+}

@@ -5,7 +5,7 @@
       <div class="nav_links">
           <a href="index.php">Home</a>
       <a href="about.php">About</a>
-          <a href="#">Events</a>
+          <a href="events.php">Events</a>
           <a href="#">Nomination</a>
           <a href="#">Ticket</a>
       </div>
@@ -20,7 +20,7 @@
   <div class="mobile_nav">
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
-      <a href="#">Events</a>
+      <a href="events.php">Events</a>
       <a href="#">Nomination</a>
       <a href="#">Ticket</a>
       <a href="#" class="nav_call">Contact</a>

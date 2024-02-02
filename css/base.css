@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Caros';
     text-decoration: none !important;
+
 }
 
 body {
@@ -28,6 +29,8 @@ body {
     padding: 0 10%;
     padding-block: 10px;
     background-color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .logo span {
@@ -149,7 +152,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
+        position: relative;
 
 
     }
@@ -164,6 +167,10 @@ body {
         text-align: center;
 
     }
+        .hero_all {
+            height: 100%;
+        }
+
 }
 
 @media only screen and (max-width: 810px) {
@@ -175,4 +182,7 @@ body {
         width: 100%;
 
     }
+        .hero_all {
+            height: 100%;
+        }
 }

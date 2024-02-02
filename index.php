@@ -23,7 +23,7 @@
                     pageant.
                 </p>
                 <div class="hero_btn">
-                    <a href="#" class="vv">Events</a>
+                    <a href="events.php" class="vv">Events</a>
                 </div>
 
             </div>
