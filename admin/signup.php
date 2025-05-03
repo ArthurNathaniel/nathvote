@@ -31,7 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Signup</title>
+    <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/auth.css">
 </head>
@@ -39,41 +42,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
     <div class="all">
-       <div class="all_box">
-  <div class="title">
-  <h2>NathVote - Admin Signup</h2>
-  </div>
-        <form method="POST" action="">
-            <div class="forms">
-                <label>Full Name</label>
-                <input type="text" name="full_name" required>
+        <div class="all_box">
+            <div class="title">
+                <h2>NathVote - Admin Signup</h2>
             </div>
+            <form method="POST" action="">
+                <div class="forms">
+                    <label>Full Name</label>
+                    <input type="text" name="full_name" required>
+                </div>
 
-            <div class="forms">
-                <label>Email Address</label>
-                <input type="email" name="email" required>
-            </div>
+                <div class="forms">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
 
-            <div class="forms">
-                <label>Phone Number</label>
-                <input type="tel" name="phone" required>
-            </div>
+                <div class="forms">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
 
-            <div class="forms">
-                <label>Password</label>
-                <input type="password" name="password" id="password" required>
-            </div>
+                <div class="forms">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
 
-            <div class="form">
-                <input type="checkbox" onclick="togglePassword()"> Show Password
-            </div>
-            <div class="forms">
-                <button type="submit">Sign Up</button>
-            </div>
+                <div class="form">
+                    <input type="checkbox" onclick="togglePassword()"> Show Password
+                </div>
+                <div class="forms">
+                    <button type="submit">Sign Up</button>
+                </div>
 
-            
-        </form>
-       </div>
+
+            </form>
+        </div>
     </div>
 
     <script>

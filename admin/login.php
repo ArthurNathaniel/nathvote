@@ -30,55 +30,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
+    <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/auth.css">
 </head>
+
 <body>
 
-<div class="all">
-    <div class="all_box">
-        <div class="title">
-            <h2>NathVote - Admin Login</h2>
-        </div>
-        <form method="POST" action="">
-            <?php if (isset($error)): ?>
-                <p style="color: red;"><?= $error ?></p>
-            <?php endif; ?>
-
-            <div class="forms">
-                <label>Email or Phone</label>
-                <input type="text" name="identifier" required>
+    <div class="all">
+        <div class="all_box">
+            <div class="title">
+                <h2>NathVote - Admin Login</h2>
             </div>
+            <form method="POST" action="">
+                <?php if (isset($error)): ?>
+                    <p style="color: red;"><?= $error ?></p>
+                <?php endif; ?>
 
-            <div class="forms">
-                <label>Password</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-
-            <div class="form">
-                <input type="checkbox" onclick="togglePassword()"> Show Password
-            </div>
-
-            <div class="forms">
-                <button type="submit">Login</button>
-            </div>
-            <br>
-            <div class="form forgot_password">
-                    <p><a href="forgot_password.php">Forgot your password?</a></p>
-              
+                <div class="forms">
+                    <label>Email or Phone</label>
+                    <input type="text" name="identifier" required>
                 </div>
-        </form>
-    </div>
-</div>
 
-<script>
-function togglePassword() {
-    var x = document.getElementById("password");
-    x.type = (x.type === "password") ? "text" : "password";
-}
-</script>
+                <div class="forms">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="form">
+                    <input type="checkbox" onclick="togglePassword()"> Show Password
+                </div>
+
+                <div class="forms">
+                    <button type="submit">Login</button>
+                </div>
+                <br>
+                <div class="form forgot_password">
+                    <p><a href="forgot_password.php">Forgot your password?</a></p>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var x = document.getElementById("password");
+            x.type = (x.type === "password") ? "text" : "password";
+        }
+    </script>
 
 </body>
+
 </html>

@@ -6,9 +6,9 @@
         <h4>ADMIN</h4>
         <a href="dashboard.php">Dashboard</a>
         <div class="dasheds"></div>
-        <a href="register_teller.php">Register Teller</a>
+        <a href="register_event_organizer.php">Register Event Organizer</a>
         <div class="dasheds"></div>
-        <a href="view_tellers.php">View Tellers</a>
+        <a href="view_event_organizers.php">View Event Organizers</a>
         <div class="dasheds"></div>
        
        
