@@ -352,6 +352,7 @@ th {
   background-color: #CE0E2D;
   padding: 5px;
   color: #fff;
+  text-transform: uppercase;
 }
 .sidebar h4 i{
   color: #fff;
