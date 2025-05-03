@@ -1,0 +1,23 @@
+.all{
+    padding: 0 30%;
+    margin-top: 50px;
+}
+.all_box{
+    background-color: #fff;
+    padding: 0 5%;
+    padding-block: 50px;
+  
+}
+
+.title{
+    text-align: center;
+}
+.forgot_password a{
+  
+    color: #000;
+    text-decoration: underline;
+    width: 100%;
+}
+.forgot_password{
+    text-align: center;
+}
